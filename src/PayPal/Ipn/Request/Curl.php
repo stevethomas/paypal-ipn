@@ -78,7 +78,7 @@ class Curl extends IpnRequest
         curl_setopt($ch, CURLOPT_HEADER, true);
 
         if ($this->forceSSLv3) {
-            curl_setopt($ch, CURLOPT_SSLVERSION, 3);
+            curl_setopt($ch, CURLOPT_SSLVERSION, 1);
         }
 
         $responseBody = curl_exec($ch);
